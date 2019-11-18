@@ -1,4 +1,4 @@
-package com.mintosoft.internetconnection;
+package com.mintosoft.internetconnection.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

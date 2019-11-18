@@ -1,4 +1,4 @@
-package com.mintosoft.internetconnection;
+package com.mintosoft.internetconnection.utils;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -13,7 +13,7 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.StringRes;
 
-import com.mintosoft.internetconnection.utils.CallbackDialog;
+import com.mintosoft.internetconnection.R;
 
 public class DialogUtils {
 

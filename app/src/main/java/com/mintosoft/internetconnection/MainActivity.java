@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 
-import com.mintosoft.internetconnection.data.SharedPref;
 import com.mintosoft.internetconnection.utils.CallbackDialog;
+import com.mintosoft.internetconnection.utils.DialogUtils;
+import com.mintosoft.internetconnection.utils.NetworkCheck;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,23 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 startProcess();
             }
         }, 2000);
-    }
-
-
-    public void dialogServerNotConnect() {
-        Dialog dialog = new DialogUtils(this).buildDialogWarning(R.string.title_unable_connect, R.string.msg_unable_connect, R.string.TRY_AGAIN, R.string.CLOSE, R.drawable.ic_launcher_foreground, new CallbackDialog() {
-            @Override
-            public void onPositiveClick(Dialog dialog) {
-                dialog.dismiss();
-                retryOpenApplication();
-            }
-
-            @Override
-            public void onNegativeClick(Dialog dialog) {
-                finish();
-            }
-        });
-        dialog.show();
     }
 
 }
